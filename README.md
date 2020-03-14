@@ -32,7 +32,7 @@ FOSSEE_Spreadsheet uses following python packages that one should install to use
 
 ### Installation
 
-Install the dependencies and devDependencies and start the server.
+Install the dependencies
 
 ```sh
 $ pip install python-csv
