@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>FOSSEE_Ritik module &#8212; FOSSEE_python_Project 1.0.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-FOSSEE_Ritik">
+<span id="fossee-ritik-module"></span><h1>FOSSEE_Ritik module<a class="headerlink" href="#module-FOSSEE_Ritik" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="FOSSEE_Ritik.Main">
+<em class="property">class </em><code class="sig-prename descclassname">FOSSEE_Ritik.</code><code class="sig-name descname">Main</code><a class="headerlink" href="#FOSSEE_Ritik.Main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QMainWindow</span></code></p>
+<p>Main class inherits from QMainWindow</p>
+<dl class="method">
+<dt id="FOSSEE_Ritik.Main.open_sheet">
+<code class="sig-name descname">open_sheet</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FOSSEE_Ritik.Main.open_sheet" title="Permalink to this definition">¶</a></dt>
+<dd><p>calls file browser to open the csv,xlsx file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>workbooklist - contains class sheet object list
+paths - list of path for each csv file</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FOSSEE_Ritik.Main.quit_app">
+<code class="sig-name descname">quit_app</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FOSSEE_Ritik.Main.quit_app" title="Permalink to this definition">¶</a></dt>
+<dd><p>Quits the window and closes the app</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FOSSEE_Ritik.Main.setMenu">
+<code class="sig-name descname">setMenu</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FOSSEE_Ritik.Main.setMenu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the menu, toolbar, user interface</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FOSSEE_Ritik.Main.setTab">
+<code class="sig-name descname">setTab</code><span class="sig-paren">(</span><em class="sig-param">index=0</em>, <em class="sig-param">name='Untitled'</em><span class="sig-paren">)</span><a class="headerlink" href="#FOSSEE_Ritik.Main.setTab" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add Tabs to QTabWidget for number</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> – current index of Tab in QTabWidget</p></li>
+<li><p><strong>name</strong> – sets the title of tab according to csv file name</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FOSSEE_Ritik.Main.submit_sheet">
+<code class="sig-name descname">submit_sheet</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FOSSEE_Ritik.Main.submit_sheet" title="Permalink to this definition">¶</a></dt>
+<dd><p>creates the text file of each row of workbook containg the data of that row</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FOSSEE_Ritik.Main.validate_sheet">
+<code class="sig-name descname">validate_sheet</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FOSSEE_Ritik.Main.validate_sheet" title="Permalink to this definition">¶</a></dt>
+<dd><p>validates the workbook table if contains bad values calls message box</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FOSSEE_Ritik.Main.xlsxToCsv">
+<code class="sig-name descname">xlsxToCsv</code><span class="sig-paren">(</span><em class="sig-param">path</em><span class="sig-paren">)</span><a class="headerlink" href="#FOSSEE_Ritik.Main.xlsxToCsv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts the xlsx file to csv file format for each workbook</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>path</strong> – Directory path for the file</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="FOSSEE_Ritik.MyTable">
+<em class="property">class </em><code class="sig-prename descclassname">FOSSEE_Ritik.</code><code class="sig-name descname">MyTable</code><span class="sig-paren">(</span><em class="sig-param">r</em>, <em class="sig-param">c</em><span class="sig-paren">)</span><a class="headerlink" href="#FOSSEE_Ritik.MyTable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QTableWidget</span></code></p>
+<p>This class creates a QTableWidget Object</p>
+<dl class="method">
+<dt id="FOSSEE_Ritik.MyTable.c_current">
+<code class="sig-name descname">c_current</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FOSSEE_Ritik.MyTable.c_current" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called whenever cell value changes</p>
+<p>Functionality: checks the bad value for a cell and pops dialog box</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FOSSEE_Ritik.MyTable.init_ui">
+<code class="sig-name descname">init_ui</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FOSSEE_Ritik.MyTable.init_ui" title="Permalink to this definition">¶</a></dt>
+<dd><p>initialise User Interface</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="FOSSEE_Ritik.MyTable.messageBox">
+<code class="sig-name descname">messageBox</code><span class="sig-paren">(</span><em class="sig-param">bad_values</em>, <em class="sig-param">flag</em><span class="sig-paren">)</span><a class="headerlink" href="#FOSSEE_Ritik.MyTable.messageBox" title="Permalink to this definition">¶</a></dt>
+<dd><p>initialise the QMessageBox object for warning message</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bad_values</strong> – list of (rows,cols) containing bad values</p></li>
+<li><p><strong>flag</strong> – Flags the condition for bad values</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="FOSSEE_Ritik.Sheet">
+<em class="property">class </em><code class="sig-prename descclassname">FOSSEE_Ritik.</code><code class="sig-name descname">Sheet</code><a class="headerlink" href="#FOSSEE_Ritik.Sheet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for creating table</p>
+<dl class="method">
+<dt id="FOSSEE_Ritik.Sheet.setColumnHeaders">
+<code class="sig-name descname">setColumnHeaders</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FOSSEE_Ritik.Sheet.setColumnHeaders" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the Headers for the table Object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">FOSSEE_python_Project</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Ritik Kumar Sahu.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/FOSSEE_Ritik.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
