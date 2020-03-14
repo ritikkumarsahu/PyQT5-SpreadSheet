@@ -51,5 +51,5 @@ $ pip install PyQt5
 - Download our project files from Github
 - Go to Documentation/_build/html Folder
 - Start index.html
-# Made by Ritik Kumar Sahu for Fossee Summer Fellowship ©
+# Made by Ritik Kumar Sahu for Fossee Summer Fellowship
 
