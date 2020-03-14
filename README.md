@@ -12,7 +12,6 @@ Username - ritikrks
   - The clicking of the “Validate” button validated the data and a suitable error message for bad values is displayed in the message box.
   - All cells other than headers takes only numerical inputs.
   - Headers are not editable.
-  - ID column shall be unique, i.e., ID number should not be repeated
   - Once the user submits the data by clicking on the “Submit” button, it creates a new text file for each row. This text file is a dictionary with header value as key and cell value as value.
   - Text files are saved in the working folder or you can take folder location from the user.
   - Text files are saved as Modulename_ID. For example, if the user submits fin plate inputs, the first row will be saved as FinPlate_1 automatically, i.e., the user does not have to specify the file name for each row.
