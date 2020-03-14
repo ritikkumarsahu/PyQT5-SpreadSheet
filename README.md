@@ -7,7 +7,7 @@ Username - ritikrks
   - A desktop application that will take inputs for four different categories (modules).
   - GUI shall has a spreadsheet, Load Inputs, Validate and Submit buttons, message box to display warning messages if the user gives a bad value.
   - A spreadsheet of different modules opens in different tabs of the same window.
-  - Based on the selected module corresponding header row is displaying in spreadsheet GUI. Details of header rows, with sample input values for each module, are given in resources.
+  - Based on the selected module corresponding header row is displaying in spreadsheet GUI.
   - “Load Inputs” button prompts for selecting CSV/xlxs file, which will populate the spreadsheet. Also, Users can fill data manually in each row.
   - The clicking of the “Validate” button validated the data and a suitable error message for bad values is displayed in the message box.
   - All cells other than headers takes only numerical inputs.
